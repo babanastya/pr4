@@ -1,0 +1,302 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: 000;
+  font-size: 16px;
+  font-family: 'Anton', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url('../img/header-bg.jpg') no-repeat center top / cover;
+  padding-bottom: 322px;
+}
+
+.nav {
+  padding-top: 57px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 67px;
+}
+
+.menu {
+  font-size: 14px;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.menu li, a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.tel {
+  font-size: 17px;
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+
+.offer {
+  margin-top: 216px;
+  color: #fff;
+}
+
+.offer a {
+  font-size: 17px;
+}
+
+.offer h1 {
+  font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 19px;
+  margin-top: -9px;
+}
+
+.offer p {
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  width: 238px;
+  padding: 18px 47px;
+  border: 1px solid #fff;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #EBEBEB;
+}
+
+section {
+  padding-top: 113px;
+  padding-bottom: 52px;
+}
+
+.caption h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 75.27px;
+  margin-bottom: 58px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 67px;
+}
+
+.text h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text p {
+  margin-top: 19px;
+  text-align: justify;
+  line-height: 1.62em;
+}
+
+.text_1, .text_2 {
+  width: 564px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 113px;
+}
+
+.footer p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 80px; ;
+} 
+
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+      width: 960px;
+  }
+
+  .pictures {
+    flex-wrap: wrap;
+    padding: 0px 150px;
+  }
+
+  .pictures .thp {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .text_1, .text_2 {
+    width: 450px;
+    }
+
+  .footer p {
+    margin: 0 auto;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .text_1, .text_2 {
+    width: 350px;
+    }
+  
+  .pictures {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pictures .thp {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}
+
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .about .container {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text {
+    display: block;
+  }
+
+  .text_1, .text_2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .pictures {
+    padding: 0;
+  }
+}
+
+/* 350px - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav .menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav .tel {
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .text {
+    margin-bottom: 30px;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  .text_1, .text_2 {
+    width: 300px;
+  }
+
+  .pictures{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pictures .thp, .firstp, .secp {
+    width: 40%;
+    padding: 0;
+  }
+  .pictures .thp {
+    width: 60%;
+  }
+}
+
+/* 0px - 350px */
+@media screen and (max-width: 350px) {
+  
+  .nav {
+    padding-top: 20px;
+  }
+
+  .offer, .container {
+    text-align: center;
+  }
+  .offer h1 {
+    font-size: 50px;
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+  .btn {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .text p {
+    /*width: 200px;*/
+  }
+  .text_1, .text_2 {
+    width: 200px;
+  }
+}
